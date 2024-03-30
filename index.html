@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="app.js"></script>
-    <title>Party Planner</title>
-</head>
-<body>
-    <main>
-        <div id="main-container">
-            <h1>Upcoming Events</h1>
-            <h2>Event Details</h2>
-            <table id="events-table">
-                <tr>
-                    <th>Name</th>
-                    <th>Date</th>
-                    <th>Time</th>
-                    <th>Location</th>
-                    <th>Description</th>
-                </tr>
-            </table>
-        </div>
-    </main>
-</body>
-</html>
 
-<!-- Give each event row a delete button -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Party Tracker</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <h1>Events</h1>
+    <form id="addParty">
+        <label>
+            Event Name:
+            <input type="text" name="name" />
+        </label>
+        <label>
+            Description:
+            <input type="text" name="description" />
+        </label>
+        <label>
+            Date:
+            <input type="text" name="date" />
+        </label>
+        <label>
+            Location:
+            <input type="text" name="location" />
+        </label>
+        <button id="Addbtn">Add Party</button>
+    </form>
+    <ul id="parties"></ul>
+</body>
+
+</html>
